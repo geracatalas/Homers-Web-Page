@@ -1,0 +1,287 @@
+/* 
+  Author: Gerardo Catalas
+  Website: https://www.catalasjuin.com
+  Other: The grid system was generated using the site https://grid.layoutit.com/
+*/
+
+body{
+    background-color: #99D1EA;
+    text-align: center;
+}
+
+span i{
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 25%;
+  text-shadow: rgba(255, 255, 255, 1);
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  gap: 0px 0px;
+  grid-template-areas:
+    "reloj1 . jebus . ."
+    "gusano1 tostadora1 jebus gusano4 tostadora3"
+    "tostadora2 boca1 jebus campana2 boca2"
+    "campana1 reloj2 jebus tostadora4 reloj3"
+    "gusano2 gusano3 contador link link";
+}
+
+/* Columna 1 */
+.reloj1 { grid-area: reloj1;}
+
+.gusano1 { grid-area: gusano1; }
+.gusano1 img{
+  width: 140px;
+  height: 80px;
+}
+
+.tostadora2 { grid-area: tostadora2; }
+
+.campana1 { grid-area: campana1; text-align: right;}
+
+.gusano2 { grid-area: gusano2; }
+.gusano2 img{
+  width: 140px;
+  height: 80px;
+}
+
+/* Columna 2 */
+.tostadora1 { grid-area: tostadora1; }
+
+.boca1 { grid-area: boca1; }
+
+.reloj2 { grid-area: reloj2; text-align: right;}
+.reloj2 img{
+  width: 70px;
+}
+
+.gusano3 { grid-area: gusano3; text-align: right;}
+.gusano3 img{
+  width: 140px;
+  height: 80px;
+}
+
+/* Columna 3 */
+.jebus { grid-area: jebus; }
+
+.contador { grid-area: contador; }
+
+/* Columna 4 */
+.gusano4 { grid-area: gusano4; }
+.gusano4 img{
+  width: 140px;
+  height: 80px;
+}
+
+.campana2 { grid-area: campana2; }
+
+.tostadora4 { grid-area: tostadora4; }
+.tostadora4 img{
+  width: 120px;
+}
+
+.link { grid-area: link; font-size: 14px;}
+
+/* Columna 5 */
+.tostadora3 { grid-area: tostadora3; margin-top: -50px;}
+
+.boca2 { grid-area: boca2; margin-top: -40px;}
+.boca2 img{
+  width: 120px;
+}
+
+.reloj3 { grid-area: reloj3; }
+
+@media all and (-ms-high-contrast:none) {
+  .grid-container {
+    width: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+  }
+
+  .gusano1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .reloj1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .tostadora1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+  .tostadora2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .boca1 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+  .campana1 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .reloj2 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+  .gusano2 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .gusano3 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+  .gusano4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+  }
+
+  .campana2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+  }
+
+  .tostadora3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+
+  .boca2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+
+  .tostadora4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+  }
+
+  .reloj3 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+
+  .contador {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+
+  .jebus {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+
+@font-face {
+  font-family: 'Cooper Black Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cooper Black Regular'), url('/src/COOPBL.woff') format('woff');
+}
+
+@media (max-width: 540px) {
+  h1{
+    font-family: 'Cooper Black Regular';
+    font-weight: bold;
+    font-size: 38px;
+  }
+  .grid-container{
+    width: 100%;
+  }
+
+  /* Columna 1 */
+  .reloj1 img {width: 40px; margin-top: 20px;}
+  .gusano1 img{width: 60px; margin-top: -10px;}
+  .tostadora2 img {width: 70px; margin-top: -10px;}
+  .campana1 img{width: 50px; margin-top: -10px;}
+  .gusano2 img{width: 60px; margin-top: -10px;}
+
+  /* Columna 2 */
+  .tostadora1 img{width: 60px; margin-top: -10px;}
+  .boca1 img{width: 80px; margin-top: -10px;}
+  .reloj2 img{width: 50px; margin-top: -10px;}
+  .gusano3 img{width: 60px; margin-top: -10px;}
+
+  /* Columna 3 */
+  .jebus img{width: 110px; margin-top: 50px;}
+  .contador img{}
+
+  /* Columna 4 */
+  .gusano4 img{width: 50px;}
+  .campana2 img{width: 50px;}
+  .tostadora4 img{width: 80px;}
+
+  /* Columna 5 */
+  .tostadora3 img{width: 70px;}
+  .boca2 img{width: 80px;}
+  .reloj3 img{width: 40px;}
+}
+@media (min-width: 541px) and (max-width: 1199px) {
+  h1{
+    font-family: 'Cooper Black Regular';
+    font-weight: bold;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1{
+    font-family: 'Cooper Black Regular';
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 10px;
+  }
+}
